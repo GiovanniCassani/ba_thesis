@@ -30,7 +30,7 @@ if not os.path.exists(out_dir):
 print(datetime.now().strftime("%d/%m/%Y %H:%M:%S: Started loading the data..."))
 
 embedding_space = SemanticSpace.from_csv(
-    os.path.join(data_dir, '/home/gcassani/Resources/Embeddings/embedding_space.cbow.ukwac.subtlex.300dims.w5.w2v'),
+    os.path.join(data_dir, 'embedding_space.cbow.ukwac.subtlex.300dims.w5.w2v'),
     prenorm=True
 )
 w2v_words = embedding_space.included_words()
